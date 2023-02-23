@@ -1,11 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node --require ./appsignal.cjs server.js",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@appsignal/nodejs": "^3.0.11",
+    "express": "^4.18.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
